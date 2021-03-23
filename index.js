@@ -59,7 +59,7 @@ const async = require('async'),
                     const rgba = options.background ? color(options.background).toRgb() : { r: 0, g: 0, b: 0, a: 0 },
                         background = Jimp.rgbaToInt(rgba.r, rgba.g, rgba.b, rgba.a * MAX_HEX),
                         type = getMIME(extension, options.type),
-                        newName = filename + suffix + type.extension;
+                        newName = suffix + filename + type.extension;
 
                     const image = origImage.clone();
 
